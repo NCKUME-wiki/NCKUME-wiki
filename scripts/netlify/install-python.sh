@@ -35,8 +35,8 @@ APT_PREFIX_PATHS=(
   /bin
 )
 
-for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
-for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do cp -r "$DIR/." "$APT_PREFIX$DIR/" || true; done
+sudo for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
+sudo for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do cp -r "$DIR/." "$APT_PREFIX$DIR/" || true; done
 cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
 rm -rf "$APT_PREFIX/etc/apt/sources.list.d"/*
 
