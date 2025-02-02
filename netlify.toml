@@ -1,4 +1,5 @@
 [build]
+  environment = { PYTHON_VERSION = "3.10" }
   base = "scripts/" # Trick to disable dependencies installation
   command = "cd .. && chmod +x scripts/netlify/build.sh && scripts/netlify/build.sh"  # add permission
 
