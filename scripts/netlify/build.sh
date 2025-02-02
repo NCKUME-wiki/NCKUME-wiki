@@ -5,6 +5,7 @@ set -e
 
 DIRNAME="$(dirname -- "${BASH_SOURCE[0]}")"
 
+chmod +x "$DIRNAME"/install-python.sh
 source "$DIRNAME"/install-python.sh
 
 # Install dependencies
