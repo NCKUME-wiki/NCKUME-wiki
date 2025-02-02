@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # This script needs to be "source"-d since it sets LD_LIBRARY_PATH and PATH
 
 # Since we don't have root access on netlify, we could only install Python in current user's env
