@@ -1,0 +1,3 @@
+[submodule "mkdocs-material"]
+	path = mkdocs-material
+	url = https://github.com/NCKUME-wiki/mkdocs-material.git

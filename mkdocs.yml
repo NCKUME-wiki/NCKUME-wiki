@@ -1,0 +1,135 @@
+# Project Information
+site_name: NCKUME Wiki
+site_description: NCKUME Wiki 為機械工程領域整理有價值的知識和資訊。注重與實際工程問題的相關性、應用價值，幫助學習者在學習、面試及工作上取得成功。
+site_author: NCKUME Wiki Team
+site_url: https://NCKUME-wiki.org
+strict: false
+
+# Repository
+repo_name: NCKUME-wiki/NCKUME-wiki
+repo_url: https://github.com/NCKUME-wiki/NCKUME-wiki
+edit_uri: https://NCKUME-wiki.org/edit-landing/?ref=
+
+# Copyright
+copyright: Copyright &copy; 2024-2025 NCKUME Wiki Team
+
+# Contents
+nav:
+  - 簡介:
+    - Getting Started: index.md 
+
+# Theme
+theme:
+  name: null
+  custom_dir: 'mkdocs-material/material/templates'
+  static_templates:
+    - 404.html
+  language: 'zh-TW'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  include_search_page: false
+  search_index_only: true
+  favicon: 'media/NCKUME_favicon_250201.ico'
+  icon:
+    # logo: 'NCKUME/gear-screw'
+    logo: 'NCKUME/gear-screw2'
+    # logo: 'NCKUME/gear-ME'
+  features:
+    - content.action.edit
+    - navigation.tabs
+    - navigation.instant
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+
+plugins: []
+  # - search
+
+hooks:
+  - hooks/on_env.py
+  - hooks/on_page_markdown.py
+
+# Customization
+extra:
+  disqus: 'NCKUME-Wiki'
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+  githash: ''
+  analytics:
+    provider: google
+    property: ---
+  alternate:
+    - link: / #/macro/
+      name: 繁中-Elaborated Chinese
+    - link: /micro/ # /micro/
+      name: 簡中-Succinct Chinese
+    - link: /en/
+      name: English
+
+extra_javascript:
+  - '_static/js/ToggleEnTerm.js'
+  - '_static/js/math-csr.js?math-csr'
+  - 'assets/vendor/mathjax/es5/tex-mml-chtml.js?math-csr'
+  # - '{OIWikiFeedbackSystemFrontendJS}' # see: scripts/pre-build/install-feedback-sys-frontend.ts # 不知道什麼東西
+  # - '{OIWikiFeedbackSystemFrontendContentScript}' # see: scripts/pre-build/install-feedback-sys-frontend.ts
+
+extra_css:
+  - '_static/css/extra.css?v=16'
+  # - '_static/css/offset-inject-debug.css'
+  # - '{OIWikiFeedbackSystemFrontendCSS}' # see: scripts/pre-build/install-feedback-sys-frontend.ts
+
+# Extensions
+markdown_extensions:
+  # - document-offsets-injection:
+  #     # debug: true
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: ""
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true

@@ -1,0 +1,20 @@
+{
+  "short_name": "ME Wiki",
+  "name": "NCKEME Wiki",
+  "icons": [
+    {
+      "src": "media/NCKUME_favicon_250201.ico",
+      "sizes": "48x48"
+    },
+    {
+      "src": "media/NCKUME_favicon_192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "media/NCKUME_favicon_512x512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "index.html?launcher=true"
+}
