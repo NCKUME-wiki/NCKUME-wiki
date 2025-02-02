@@ -1,7 +1,7 @@
 {
-  "name": "oi-wiki",
-  "version": "1.0.0",
-  "description": "wiki for OI / ACM-ICPC",
+  "name": "nckume-wiki",
+  "version": "0.0.1",
+  "description": "wiki for mechanical engineering",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -16,19 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OI-wiki/OI-wiki.git"
+    "url": "git+https://github.com/NCKUME-wiki/NCKUME-wiki.git"
   },
   "keywords": [
-    "OI",
+    "ME",
     "wiki",
-    "ACM-ICPC"
+    "Mechanical Engineering"
   ],
-  "author": "OI Wiki Team",
+  "author": "NCKUME Wiki Team",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/OI-wiki/OI-wiki/issues"
+    "url": "https://github.com/NCKUME-wiki/NCKUME-wiki/issues"
   },
-  "homepage": "https://github.com/OI-wiki/OI-wiki#readme",
+  "homepage": "https://github.com/NCKUME-wiki/NCKUME-wiki#readme",
   "dependencies": {
     "@swc/core": "^1.2.210",
     "chalk": "^4.1.0",

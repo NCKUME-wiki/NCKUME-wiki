@@ -47,9 +47,8 @@ theme:
   search_index_only: true
   favicon: 'media/NCKUME_favicon_250201.ico'
   icon:
-    # logo: 'NCKUME/gear-screw'
-    logo: 'NCKUME/gear-screw2'
-    # logo: 'NCKUME/gear-ME'
+    logo: 'NCKUME/NCKUME-wiki'
+    # logo: 'material/school'
   features:
     - content.action.edit
     - navigation.tabs
