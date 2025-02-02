@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# dummy comment (only "chmod +x"ing it is not detectable to git hub? kindof)
 set -e
 
 DIRNAME="$(dirname -- "${BASH_SOURCE[0]}")"
