@@ -35,11 +35,12 @@ APT_PREFIX_PATHS=(
   /bin
 )
 
-npm install netlify-cli
+# npm install netlify-cli
 
 for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
 for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do
-  cp -r --exclude='triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
+  rsync -av --exclude='./triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
+  # cp -r --exclude='triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
 #  cp -r "$DIR/." "$APT_PREFIX$DIR/" || true;
 done
 cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
