@@ -19,9 +19,41 @@ APT_PREFIX_MAKE_DIRS=(
   /var/cache/apt/archives/partial
   /var/log/apt
 )
+#  manually exclude trigger file...
 APT_PREFIX_COPY_DIRS=(
   /etc/apt
-  /var/lib/dpkg
+  # /var/lib/dpkg
+  /var/lib/dpkg/available
+  /var/lib/dpkg/cmethopt
+  /var/lib/dpkg/diversions
+  /var/lib/dpkg/diversions-old
+  /var/lib/dpkg/lock
+  /var/lib/dpkg/lock-frontend
+  /var/lib/dpkg/statoverride
+  /var/lib/dpkg/statoverride-old
+  /var/lib/dpkg/status
+  /var/lib/dpkg/status-old
+# 
+  /var/lib/dpkg/alternatives
+  /var/lib/dpkg/info
+  /var/lib/dpkg/parts
+  /var/lib/dpkg/updates
+# 
+  /var/lib/dpkg/triggers/File
+  /var/lib/dpkg/triggers/Unincorp
+  /var/lib/dpkg/triggers/aspell-autobuildhash
+  /var/lib/dpkg/triggers/ispell-autobuildhash
+  /var/lib/dpkg/triggers/ldconfig
+  /var/lib/dpkg/triggers/lib32
+  /var/lib/dpkg/triggers/libo32
+  /var/lib/dpkg/triggers/libx32
+  /var/lib/dpkg/triggers/update-ca-certificates
+  /var/lib/dpkg/triggers/update-ca-certificates-fresh
+  /var/lib/dpkg/triggers/update-ca-certificates-java
+  /var/lib/dpkg/triggers/update-ca-certificates-java-fresh
+  /var/lib/dpkg/triggers/update-default-ispell
+  /var/lib/dpkg/triggers/update-default-wordlist
+  /var/lib/dpkg/triggers/update-sgmlcatalog
 )
 APT_PREFIX_LD_LIBRARY_PATHS=(
   /lib
