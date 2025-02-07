@@ -83,8 +83,12 @@ for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
 for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do rsync -av "$DIR/." "$APT_PREFIX$DIR/" || true; done
 for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do rsync -av "$DIR" "$APT_PREFIX$DIR" || true; done
 echo "copy done"
-cat /etc/apt/sources.list
-cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
+# cat /etc/apt/sources.list :
+# Ubuntu sources have moved to the /etc/apt/sources.list.d/ubuntu.sources
+# file, which uses the deb822 format. Use deb822-formatted .sources files
+# to manage package sources in the /etc/apt/sources.list.d/ directory.
+# See the sources.list(5) manual page for details.
+cat /etc/apt/sources.list.d/ubuntu.sources | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
 echo "cat done"
 rm -rf "$APT_PREFIX/etc/apt/sources.list.d"/*
 echo "rm done"
