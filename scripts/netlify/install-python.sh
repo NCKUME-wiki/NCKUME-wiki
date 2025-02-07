@@ -76,12 +76,12 @@ APT_PREFIX_PATHS=(
 
 # npm install netlify-cli
 for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
-for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do
+# for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do cp -r "$DIR/." "$APT_PREFIX$DIR/" || true; done
+# for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do cp -r "$DIR" "$APT_PREFIX$DIR" || true; done
   # rsync -av --exclude="./triggers/Lock" "$DIR/." "$APT_PREFIX$DIR/" || true
   # cp -r --exclude='triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
- cp -r "$DIR/." "$APT_PREFIX$DIR/" || true;
-done
-for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do cp -r "$DIR" "$APT_PREFIX$DIR" || true; done
+for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do rsync -av "$DIR/." "$APT_PREFIX$DIR/" || true; done
+for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do rsync -av "$DIR" "$APT_PREFIX$DIR" || true; done
 echo "copy done"
 cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
 echo "cat done"
