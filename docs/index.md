@@ -16,9 +16,13 @@ title: Getting Started
 
 本專案得以完成，實有賴 [CTF Wiki](https://ctf-wiki.org/) 的奠基與 [OI Wiki](https://OI-wiki.org/) 等各方資源的啟發。編撰過程中，我們受益良多，謹此表達深深的謝意。
 
+<!-- 
+虽然说参考，但其实是99%直接移植自OI wiki，真的十分感谢。
+ -->
+
 ## 測試用newcommand
 
-<span class="newcommand_math"></span>
+#include<newcommand_math>
 
 $$\pdev{f}{x}$$
 
@@ -32,12 +36,12 @@ $$\deflection_{max}=\frac{PL^3}{48\youngs\secondmomentum}\\=12$$
 
 $$\ndM$$
 
-## 專有名詞翻譯範例
+## <span class="term">專有名詞翻譯範例</span><span class="translation">(term translation)</span>
 
 這是一個示範如何在 Markdown 文件中實現專有名詞翻譯功能的例子。
 點擊下方按鈕顯示或隱藏所有英文翻譯。
 
-<button onclick="toggleAllTranslations()">顯示/隱藏所有翻譯</button>
+<button onclick="toggleAllTranslations()" class="translation-btn">顯示/隱藏所有翻譯</button>
 
   <p>
     <span class="term">安全應力</span><span class="translation">(proof stress)</span>、

@@ -24,15 +24,29 @@ def replace_span(input_string):
   Returns:
     替換後的字串。
   """
-  pattern = r"<span class=\"newcommand_(.*?)\"></span>"  # 匹配 <span class="xxx"></span>
+  # pattern = r"<span class=\"newcommand_(.*?)\"></span>"  # 匹配 <span class="xxx"></span>
+  # matches = re.findall(pattern, input_string)
+  # if not matches:
+  #   return input_string  # 沒有找到則返回原字串
+
+  # for match in matches:
+  #   if match == "math":
+  #     input_string = input_string.replace(f'<span class="newcommand_{match}"></span>', newcommand)
+  #   elif match == "bbb":
+  #     input_string = input_string.replace(f'<span class="{match}"></span>', text2)
+  
+  
+  
+  pattern = r"#include<(.*?)>"
   matches = re.findall(pattern, input_string)
   
   if not matches:
     return input_string  # 沒有找到則返回原字串
 
   for match in matches:
-    if match == "math":
-      input_string = input_string.replace(f'<span class="newcommand_{match}"></span>', newcommand)
+    if match == "newcommand_math":
+      tag = f"<p style=\"display: none;\"><span class=\"{match}\">{newcommand}</span></p>"
+      input_string = input_string.replace(f'#include<{match}>', tag)
     elif match == "bbb":
       input_string = input_string.replace(f'<span class="{match}"></span>', text2)
 

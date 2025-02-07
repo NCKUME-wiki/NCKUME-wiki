@@ -15,8 +15,87 @@ copyright: Copyright &copy; 2024-2025 NCKUME Wiki Team
 
 # Contents
 nav:
-  - 簡介:
-    - Getting Started: index.md 
+  - 簡介: 
+    - Getting Started: index.md # trans done
+    - 關於本項目: intro/about.md
+    - 如何參與: intro/htc.md
+    - NCKUME Wiki 不是什麼: intro/what-nckume-wiki-is-not.md
+    - 格式手冊: intro/format.md
+    - 數學符號表: intro/symbol.md
+    - F.A.Q.: intro/faq.md
+    # - 鏡像站列表: intro/mirrors.md # 我們還沒有那麼有錢買得起那麼多網域。
+    - 致謝: intro/thanks.md #
+  - 總論:
+    - 機械工程: general/index.md
+    # - 電腦輔助設計: general/CAD.md
+    - 量測: general/metrology.md
+    - 工程圖:  general/eng-drawing.md
+    - 機動學: general/mechanism.md
+    - 振動學: general/vibration.md
+  - 工程數學:
+    - 簡介: eng-math/index.md
+    - 微積分: eng-math/calculus.md
+    - 線性代數: eng-math/linear-algbra.md
+    - 常微分方程: eng-math/ode.md
+    - 偏微分方程: eng-math/pde.md
+    - 複分析: eng-math/complex.md
+    - 張量: eng-math/tensor.md
+    - 統計: eng-math/statistics.md
+  - 工程力學:
+    - 簡介: mechanics/index.md
+    - 靜力學: mechanics/statics.md
+    - 動力學: mechanics/dynamics.md
+    - 運動學: mechanics/kinematics.md
+    - 材料力學: mechanics/material.md
+    - 彈性力學: mechanics/elasticity.md
+    - 塑性力學: mechanics/plasticity.md
+  - 熱流科學:
+    - 簡介: thermo-fluid/index.md
+    - 熱力:  thermo-fluid/thermodynamics.md
+    - 熱傳: thermo-fluid/heat-transfer.md
+    - 流體力學: thermo-fluid/fluid.md
+    - 燃燒學: thermo-fluid/combustion.md
+  - 光電磁學: 
+    - 簡介: oem/index.md
+    - 光學: oem/optics.md
+    - 電子學: oem/electronics.md
+    - 電工學: oem/electrical-eng.md
+    - 機電系統: oem/electromechanical.md
+  - 控制理論:
+    - 簡介: control/index.md
+    - 控制理論: control/theory.md
+    - 機器人學: control/robotics.md
+    - 控制工具: control/tools.md
+  - 材料科學:
+    - 簡介: material/index.md
+    - 材料結構: material/struct.md
+    - 材料試驗: material/test.md
+    - 工程材料: 
+      - 金屬: material/metal.md
+      - 陶瓷: material/ceramics.md
+      - 聚合物: material/polymer.md
+      - 複合材料: material/composite.md
+  - 機械製造:
+    - 機械製造: manufacture/index.md
+  - 機械設計:
+    - 機械設計: design/index.md
+  - 電腦輔助X:
+    - 電腦輔助工程: computer-aided/index.md # CAE
+    - 設計: computer-aided/CAD.md
+    - 製造: computer-aided/CAM.md
+    - 產品生命週期管理: computer-aided/PLM.md
+  - 其他:
+    - 其他: misc/index.md
+    - 統計製程管理: misc/spc.md
+    - 品質工程: misc/quality.md
+    - 可靠度工程: misc/reliability.md
+    - 數值方法: misc/numeric-method.md
+  - 術語列表:
+    - glossary: glossary/index.md
+  - 專題:
+    - Make your X: 404.html
+  - 測試: basic/insertion-sort.md
+
 
 # Theme
 theme:
@@ -53,6 +132,8 @@ theme:
     - content.action.edit
     - navigation.tabs
     - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.top
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
@@ -91,6 +172,7 @@ extra_javascript:
 
 extra_css:
   - '_static/css/extra.css?v=16'
+  - '_static/css/translationBtn.css'
   # - '_static/css/offset-inject-debug.css'
   # - '{OIWikiFeedbackSystemFrontendCSS}' # see: scripts/pre-build/install-feedback-sys-frontend.ts
 
