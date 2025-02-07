@@ -127,7 +127,6 @@ theme:
   favicon: 'media/NCKUME_favicon_250201.ico'
   icon:
     logo: 'NCKUME/NCKUME-wiki'
-    # logo: 'material/school'
   features:
     - content.action.edit
     - navigation.tabs
@@ -139,14 +138,9 @@ theme:
     code: 'Fira Mono'
   term:
     icon: material/book-open-blank-variant
-    scheme: slate
-    primary: blue
-    accent: blue
-    toggle:
-    
 
-plugins: []
-  # - search
+plugins:
+  - search
 
 hooks:
   - hooks/on_env.py
