@@ -137,6 +137,13 @@ theme:
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
+  term:
+    icon: material/book-open-blank-variant
+    scheme: slate
+    primary: blue
+    accent: blue
+    toggle:
+    
 
 plugins: []
   # - search
