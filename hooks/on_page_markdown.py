@@ -1,7 +1,8 @@
 import re
 text1 = "這是 aaa 的替換文字"
 text2 = "這是 bbb 的替換文字"
-newcommand = r"""$$\newcommand{\R}{\mathrm{cos}(R)} 
+newcommand = r"""
+  $$\newcommand{\R}{\mathrm{cos}(R)} 
   \newcommand{\heatflux}{q}
   \newcommand{\heatrate}{\dot{\heatflux}}
   \newcommand{\deflection}{\delta{}}
