@@ -15,6 +15,7 @@ APT_PREFIX_MAKE_DIRS=(
   /etc/apt
   /usr/lib
   /var/lib/dpkg
+  /var/lib/dpkg/triggers
   /var/lib/apt/lists/partial
   /var/cache/apt/archives/partial
   /var/log/apt
@@ -76,7 +77,7 @@ for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do
   # cp -r --exclude='triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
  cp -r "$DIR/." "$APT_PREFIX$DIR/" || true;
 done
-for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do cp -r "$DIR" "$APT_PREFIX$DIR/" || true; done
+for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do cp -r "$DIR" "$APT_PREFIX$DIR" || true; done
 cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
 rm -rf "$APT_PREFIX/etc/apt/sources.list.d"/*
 
