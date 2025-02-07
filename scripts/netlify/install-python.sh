@@ -23,6 +23,13 @@ APT_PREFIX_MAKE_DIRS=(
 APT_PREFIX_COPY_DIRS=(
   /etc/apt
   # /var/lib/dpkg
+  /var/lib/dpkg/alternatives
+  /var/lib/dpkg/info
+  /var/lib/dpkg/parts
+  /var/lib/dpkg/updates
+
+)
+APT_PREFIX_COPY_FILES=(
   /var/lib/dpkg/available
   /var/lib/dpkg/cmethopt
   /var/lib/dpkg/diversions
@@ -33,11 +40,6 @@ APT_PREFIX_COPY_DIRS=(
   /var/lib/dpkg/statoverride-old
   /var/lib/dpkg/status
   /var/lib/dpkg/status-old
-# 
-  /var/lib/dpkg/alternatives
-  /var/lib/dpkg/info
-  /var/lib/dpkg/parts
-  /var/lib/dpkg/updates
 # 
   /var/lib/dpkg/triggers/File
   /var/lib/dpkg/triggers/Unincorp
@@ -68,13 +70,13 @@ APT_PREFIX_PATHS=(
 )
 
 # npm install netlify-cli
-ls -l /var/lib/dpkg/triggers
 for DIR in "${APT_PREFIX_MAKE_DIRS[@]}"; do mkdir -p "$APT_PREFIX$DIR"; done
 for DIR in "${APT_PREFIX_COPY_DIRS[@]}"; do
   # rsync -av --exclude="./triggers/Lock" "$DIR/." "$APT_PREFIX$DIR/" || true
   # cp -r --exclude='triggers/Lock' "$DIR/." "$APT_PREFIX$DIR/" || true
  cp -r "$DIR/." "$APT_PREFIX$DIR/" || true;
 done
+for DIR in "${APT_PREFIX_COPY_FILES[@]}"; do cp -r "$DIR" "$APT_PREFIX$DIR/" || true; done
 cat /etc/apt/sources.list | grep 'ubuntu\.com' > "$APT_PREFIX/etc/apt/sources.list"
 rm -rf "$APT_PREFIX/etc/apt/sources.list.d"/*
 
