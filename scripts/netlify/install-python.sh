@@ -16,6 +16,10 @@ APT_PREFIX_MAKE_DIRS=(
   /usr/lib
   /var/lib/dpkg
   /var/lib/dpkg/triggers
+  /var/lib/dpkg/alternatives
+  /var/lib/dpkg/info
+  /var/lib/dpkg/parts
+  /var/lib/dpkg/updates
   /var/lib/apt/lists/partial
   /var/cache/apt/archives/partial
   /var/log/apt
