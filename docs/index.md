@@ -16,13 +16,20 @@ title: Getting Started
 
 本專案得以完成，實有賴 [CTF Wiki](https://ctf-wiki.org/) 的奠基與 [OI Wiki](https://OI-wiki.org/) 等各方資源的啟發。編撰過程中，我們受益良多，謹此表達深深的謝意。
 
-<!-- 
-虽然说参考，但其实是99%直接移植自OI wiki，真的十分感谢。
- -->
+<!-- 虽然说参考，但其实是99%直接移植自OI wiki，真的十分感谢。 -->
 
 ## 測試用newcommand
 
 #include<newcommand_math>
+
+
+$$
+\newcommand{\mycommandDefaultTwo}[2][預設文字]{#1：#2}
+\begin{aligned}
+&\mycommandDefaultTwo{Hello}\\
+&\mycommandDefaultTwo[World]{LaTeX}
+\end{aligned}
+$$
 
 $$\pdev{f}{x}$$
 
@@ -42,7 +49,6 @@ $$\ndM$$
 點擊下方按鈕顯示或隱藏所有英文翻譯。
 
 <button onclick="toggleAllTranslations()" class="translation-btn">顯示/隱藏所有翻譯</button>
-
   <p>
     <span class="term">安全應力</span><span class="translation">(proof stress)</span>、
     <span class="term">降伏強度</span><span class="translation">(yield strength)</span>，和
@@ -51,7 +57,6 @@ $$\ndM$$
 
   <p>是很重要的。</p>
 
-<script>
-  // #758
-  // document.getElementsByClassName('md-nav__title')[1].click()
-</script>
+【靜力學(statics)】、【動力學(dynamics)】、【材料力學(mechanics of material)】是很困難的。
+
+[^ref0]: IEEE

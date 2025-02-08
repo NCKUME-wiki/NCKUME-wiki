@@ -1,16 +1,22 @@
-## 关于本项目
+## 關於本專案
 
-**OI Wiki** 致力于成为一个免费开放且持续更新的 **编程竞赛 (competitive programming)** 知识整合站点。
+**NCKUME Wiki** 致力於成為一個免費開放且持續更新的 **機械工程（Mechnical Engineering）** 知識整合網站。
 
+**NCKUME** 代表Noetic Community for Knowledge and Understanding in Mechanical Engineering，與**其他既存組織**沒有任何關聯。若有雷同，純屬雷同。
+<!-- There is no connection to **any existing organizations**. Any similarities are purely similarities. -->
 ## 交流方式
 
-本项目主要使用 [Issues](https://github.com/OI-wiki/OI-wiki/issues)/[QQ](https://jq.qq.com/?_wv=1027&k=5EfkM6K)/[Telegram](https://t.me/OI_wiki) 进行交流沟通。
+本項目主要使用 [Issues](https://github.com/NCKUME-wiki/NCKUME-wiki/issues)/[Discord](---)<!-- 人還沒有多到要辦 -->進行交流溝通。
+<!-- [QQ](https://jq.qq.com/?_wv=1027&k=5EfkM6K)/[Telegram](https://t.me/OI_wiki) 進行交流溝通。 -->
+<!-- Telegram 群組連結為 [@OI\_wiki](https://t.me/OI_wiki)，QQ 群號碼為 [588793226](https://jq.qq.com/?_wv=1027&k=5EfkM6K)，歡迎加入。 -->
 
-Telegram 群组链接为 [@OI\_wiki](https://t.me/OI_wiki)，QQ 群号码为 [588793226](https://jq.qq.com/?_wv=1027&k=5EfkM6K)，欢迎加入。
+Discord 邀請為[@NCKUME\_wiki](---)，歡迎加入。
 
 ???+ note
-    原则上来说，上述群组是 **OI Wiki 讨论群**，所以请尽量不要在群组中发表过多与 **OI Wiki** 无关的内容。
+    原則上來說，上述群組是 **NCKUME wiki 討論群**，所以請儘量不要在群組中發表過多與 **NCKUME wiki** 無關的內容。
 
-## 项目方针
+## 方針
 
--   [OI Wiki 不是什么](./what-oi-wiki-is-not.md)
+-   [NCKUME Wiki 不是什麼](./what-nckume-wiki-is-not.md)
+
+

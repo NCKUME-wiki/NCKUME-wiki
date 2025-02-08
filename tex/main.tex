@@ -1,0 +1,19 @@
+\documentclass{article}
+\input{style}
+\begin{document}
+\begin{CJK*}{UTF8}{bsmi}
+
+  
+\section*{newcommand\_math}
+% 定義新命令
+\newcommand{\hi}{\mathbf{Hello World!!}}
+% 應用新命令
+$$ \hi $$
+% 引入其他tex檔，本質是複製貼上
+\input{calculus}
+$$ \pdev{f}{x} $$
+
+
+
+\end{CJK*}
+\end{document}

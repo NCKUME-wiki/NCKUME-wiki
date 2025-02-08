@@ -1,91 +1,91 @@
-本页面主要解答一些常见的问题。
+本頁面主要解答一些常見的問題。
 
-## 我想问点与这个 Wiki 相关的问题
+## 我想問點與這個 Wiki 相關的問題
 
-Q：你们是为什么想要做这个 Wiki 的呢？
+Q：你們是為什麼想要做這個 Wiki 的呢？
 
-A：不知道你在学 **OI** 的时候，面对庞大的知识体系，有没有感到过迷茫无助的时候？**OI Wiki** 想要做的事情可能类似于「让更多竞赛资源不充裕的同学能方便地接触到训练资源」。当然这么表述也不完全，做 Wiki 的动机可能也很纯粹，只是简单地想要对 **OI** 的发展做出一点点微小的贡献吧。XD
-
-***
-
-Q：我很感兴趣，怎么参与？
-
-A：**OI Wiki** 现在托管在 GitHub 上，你可以直接访问这个 [repo](https://github.com/OI-wiki/OI-wiki) 来查看最新进展。参与的途径包括在 GitHub 上面开 [Issue](https://github.com/OI-wiki/OI-wiki/issues)、[Pull Request](https://github.com/OI-wiki/OI-wiki/pulls)，或者在交流群中分享你的想法、直接向管理员投稿。目前，我们使用的框架是用 Python 开发的 [MkDocs](https://mkdocs.readthedocs.io)，支持 Markdown 格式（也支持插入数学公式）。
+A：不知道你在學 **OI** 的時候，面對龐大的知識體系，有沒有感到過迷茫無助的時候？**NCKUME wiki** 想要做的事情可能類似於「讓更多競賽資源不充裕的同學能方便地接觸到訓練資源」。當然這麼表述也不完全，做 Wiki 的動機可能也很純粹，只是簡單地想要對 **OI** 的發展做出一點點微小的貢獻吧。XD
 
 ***
 
-Q：可是我比较弱……不知道我能做点什么。
+Q：我很感興趣，怎麼參與？
 
-A：一切源于热爱。你可以协助其他人审核修改稿件，帮助我们宣传 **OI Wiki**，为社区营造良好学习交流氛围！
-
-***
-
-Q：现在主要是谁在做这件事啊？感觉这是个大坑，真的能做好吗？
-
-A：最开始主要是一些退役老年选手在做这件事，后来遇到了很多志同道合的小伙伴：有现役选手，退役玩家，也有从未参加过 **OI** 的朋友。目前，这个项目主要是由 **OI Wiki** 项目组来维护（下面是一张合影）。
-
-<a href="https://github.com/OI-wiki/OI-wiki/graphs/contributors"><img src="https://opencollective.com/oi-wiki/contributors.svg?width=890&button=false"/></a>
-
-当然，这个项目只靠我们的力量是很难做得十全十美的，我们诚挚地邀请你一起来完善 **OI Wiki**。
+A：**NCKUME wiki** 現在託管在 GitHub 上，你可以直接訪問這個 [repo](https://github.com/NCKUME-wiki/NCKUME-wiki) 來查看最新進展。參與的途徑包括在 GitHub 上面開 [Issue](https://github.com/NCKUME-wiki/NCKUME-wiki/issues)、[Pull Request](https://github.com/NCKUME-wiki/NCKUME-wiki/pulls)，或者在交流群中分享你的想法、直接向管理員投稿。目前，我們使用的框架是用 Python 開發的 [MkDocs](https://mkdocs.readthedocs.io)，支援 Markdown 格式（也支援插入數學公式）。
 
 ***
 
-Q：你们怎么保证我们添加的内容不会突然消失？
+Q：可是我比較弱……不知道我能做點什麼。
 
-A：我们把内容托管在 [GitHub](https://github.com/OI-wiki/OI-wiki) 上面，即使我们的服务器翻车了，内容也不会丢失。另外，我们也会定期备份大家的心血，即使有一天 GitHub 倒闭了（？），我们的内容也不会丢失。
-
-***
-
-Q：**OI Wiki** 好像有空的页面啊！
-
-A：是的。受限于项目组成员的水平和时间，我们暂时无法完成这些空页面。所以我们在这里进行征稿和招募，希望可以遇到有同样想法的朋友，我们一起把 **OI Wiki** 完善起来。
+A：一切源於熱愛。你可以協助其他人審核修改稿件，幫助我們宣傳 **NCKUME wiki**，為社區營造良好學習交流氛圍！
 
 ***
 
-Q：为什么不直接去写 [中文维基百科](https://zh.wikipedia.org/) 呢？
+Q：現在主要是誰在做這件事啊？感覺這是個大坑，真的能做好嗎？
 
-A：因为我们希望可以真正帮到更多的选手或者对这些内容感兴趣的人。而且由于众所周知的原因，中文维基上的内容并不是无门槛就可以获取到的。
+A：最開始主要是一些退役老年選手在做這件事，後來遇到了很多志同道合的小夥伴：有現役選手，退役玩家，也有從未參加過 **OI** 的朋友。目前，這個專案主要是由 **NCKUME wiki** 專案組來維護（下面是一張合影）。
 
-## 我想参与进来！
+<a href="https://github.com/NCKUME-wiki/NCKUME-wiki/graphs/contributors"><img src="https://opencollective.com/NCKUME-wiki/contributors.svg?width=890&button=false"/></a>
 
-Q：我要怎么与项目组交流？
-
-A：可以通过 [关于本项目里的交流方式](./about.md#交流方式) 联系我们。
+當然，這個項目只靠我們的力量是很難做得十全十美的，我們誠摯地邀請你一起來完善 **NCKUME wiki**。
 
 ***
 
-Q：我要怎么贡献代码或者内容？
+Q：你們怎麼保證我們添加的內容不會突然消失？
 
-请参考 [如何参与](./htc.md) 页面。
-
-***
-
-Q：目录在哪？
-
-A：目录在项目根目录下的 [mkdocs.yml](https://github.com/OI-wiki/OI-wiki/blob/master/mkdocs.yml#L17) 文件中。
+A：我們把內容託管在 [GitHub](https://github.com/NCKUME-wiki/NCKUME-wiki) 上面，即使我們的伺服器翻車了，內容也不會丟失。另外，我們也會定期備份大家的心血，即使有一天 GitHub 倒閉了（？），我們的內容也不會丟失。
 
 ***
 
-Q：如何修改一个 topic 的内容？
+Q：**NCKUME wiki** 好像有空的頁面啊！
 
-A：在对应页面右上方有一个编辑按钮<i class="md-icon">edit</i>，点击并确认阅读了 [如何贡献](./htc.md) 之后会跳转到 GitHub 上对应文件的位置。
-
-或者也可以自行阅读目录 [(mkdocs.yml)](https://github.com/OI-wiki/OI-wiki/blob/master/mkdocs.yml) 查找文件位置。
+A：是的。受限於項目組成員的水準和時間，我們暫時無法完成這些空頁面。所以我們在這裡進行徵稿和招募，希望可以遇到有同樣想法的朋友，我們一起把 **NCKUME wiki** 完善起來。
 
 ***
 
-Q：如何添加一个 topic？
+Q：為什麼不直接去寫 [中文維琪百科](https://zh.wikipedia.org/) 呢？
 
-A：有两种选择：
+A：因為我們希望可以真正幫到更多的選手或者對這些內容感興趣的人。而且由於眾所周知的原因，中文維琪上的內容並不是無門檻就可以獲取到的。
 
--   可以开一个 Issue，注明希望能添加的内容。
--   可以开一个 Pull Request，在目录 [(mkdocs.yml)](https://github.com/OI-wiki/OI-wiki/blob/master/mkdocs.yml) 中加上新的 topic，并在 [docs](https://github.com/OI-wiki/OI-wiki/tree/master/docs) 文件夹下对应位置创建一个空的 `.md` 文件。文档的格式细节请参考 [格式手册](./format.md#贡献文档要求)。
+## 我想參與進來！
+
+Q：我要怎麼與專案組交流？
+
+A：可以通過 [關於本專案裡的交流方式](./about.md#交流方式) 聯繫我們。
 
 ***
 
-Q：我尝试访问 GitHub 的时候遇到了困难。
+Q：我要怎麼貢獻代碼或者內容？
 
-A：推荐在 hosts 文件中加入如下几行[^ref1]：
+請參考 [如何參與](./htc.md) 頁面。
+
+***
+
+Q：目錄在哪？
+
+A：目錄在專案根目錄下的 [mkdocs.yml](https://github.com/NCKUME-wiki/NCKUME-wiki/blob/master/mkdocs.yml#L17) 文件中。
+
+***
+
+Q：如何修改一個 topic 的內容？
+
+A：在對應頁面右上方有一個編輯按鈕<i class="md-icon">edit</i>，點擊並確認閱讀了 [如何貢獻](./htc.md) 之後會跳轉到 GitHub 上對應檔的位置。
+
+或者也可以自行閱讀目錄 [(mkdocs.yml)](https://github.com/NCKUME-wiki/NCKUME-wiki/blob/master/mkdocs.yml) 查找檔位置。
+
+***
+
+Q：如何添加一個 topic？
+
+A：有兩種選擇：
+
+-   可以開一個 Issue，注明希望能添加的內容。
+-   可以開一個 Pull Request，在目錄 [(mkdocs.yml)](https://github.com/NCKUME-wiki/NCKUME-wiki/blob/master/mkdocs.yml) 中加上新的 topic，並在 [docs](https://github.com/NCKUME-wiki/NCKUME-wiki/tree/master/docs) 資料夾下對應位置創建一個空的 `.md` 文件。文檔的格式細節請參考 [格式手冊](./format.md#貢獻文檔要求)。
+
+***
+
+Q：我嘗試訪問 GitHub 的時候遇到了困難。
+
+A：推薦在 hosts 文件中加入如下幾行[^ref1]：
 
 ```text
 # GitHub Start
@@ -131,30 +131,30 @@ A：推荐在 hosts 文件中加入如下几行[^ref1]：
 # GitHub End
 ```
 
-可以在 [GitHub520](https://gitee.com/klmahuaw/GitHub520) 上了解到最新内容和更多信息。
+可以在 [GitHub520](https://gitee.com/klmahuaw/GitHub520) 上瞭解到最新內容和更多資訊。
 
-Linux 和 macOS 用户可以尝试使用 [依云](https://github.com/lilydjwg/) 的 [gh-check 脚本](https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058) 获取访问最快的 IP，使用 `--hosts` 参数可以直接更新 hosts 文件。使用 `--help` 参数可以获取使用帮助。使用先需要安装 Python3 和 aiohttp（`pip install aiohttp -i https://pypi.tuna.tsinghua.edu.cn/simple/`）。依云博客的介绍：[寻找最快的 GitHub IP](https://blog.lilydjwg.me/2019/8/16/gh-check.214730.html)。
+Linux 和 macOS 用戶可以嘗試使用 [依雲](https://github.com/lilydjwg/) 的 [gh-check 腳本](https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058) 獲取訪問最快的 IP，使用 `--hosts` 參數可以直接更新 hosts 檔。使用 `--help` 參數可以獲取使用幫助。使用先需要安裝 Python3 和 aiohttp（`pip install aiohttp -i https://pypi.tuna.tsinghua.edu.cn/simple/`）。依雲博客的介紹：[尋找最快的 GitHub IP](https://blog.lilydjwg.me/2019/8/16/gh-check.214730.html)。
 
-同时，您可以使用 [Gitclone](https://www.gitclone.com/) 服务加速 Clone，可以阅读其首页上的说明。
+同時，您可以使用 [Gitclone](https://www.gitclone.com/) 服務加速 Clone，可以閱讀其首頁上的說明。
 
-如果您仅仅是想 Clone **OI Wiki** 的仓库，那么：
+如果您僅僅是想 Clone **NCKUME wiki** 的倉庫，那麼：
 
 ```bash
-git clone https://gitclone.com/github.com/OI-wiki/OI-wiki
+git clone https://gitclone.com/github.com/NCKUME-wiki/NCKUME-wiki
 ```
 
-如果您需要向 **OI Wiki** 贡献，那么首先 fork **OI Wiki** 的仓库，然后（将 `username` 替换为您的用户名），需要注意的是提供的示例将使您使用 SSH 连接到 GitHub[^only-ssh-connect]：
+如果您需要向 **NCKUME wiki** 貢獻，那麼首先 fork **NCKUME wiki** 的倉庫，然後（將 `username` 替換為您的用戶名），需要注意的是提供的示例將使您使用 SSH 連接到 GitHub[^only-ssh-connect]：
 
 ```bash
-git clone https://gitclone.com/github.com/username/OI-wiki
-git remote set-url origin git@github.com:username/OI-wiki.git
+git clone https://gitclone.com/github.com/username/NCKUME-wiki
+git remote set-url origin git@github.com:username/NCKUME-wiki.git
 ```
 
 ***
 
-Q：我这里 pip 也太慢了！
+Q：我這裡 pip 也太慢了！
 
-A：可以选择更换国内源[^ref2]，或者：
+A：可以選擇更換國內源[^ref2]，或者：
 
 ```bash
 pip install -U -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
@@ -162,25 +162,25 @@ pip install -U -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 ***
 
-Q：我在客户端 clone 了这个项目，速度太慢。
+Q：我在用戶端 clone 了這個專案，速度太慢。
 
-A：如果有安装 `git bash`，可以加几个限制来减少下载量。[^ref3]
+A：如果有安裝 `git bash`，可以加幾個限制來減少下載量。[^ref3]
 
 ```bash
-git clone https://github.com/OI-wiki/OI-wiki.git --depth=1 -b master
+git clone https://github.com/NCKUME-wiki/NCKUME-wiki.git --depth=1 -b master
 ```
 
 ***
 
-Q：我没装过 Python 3。
+Q：我沒裝過 Python 3。
 
-A：可以访问 [Python 官网](https://www.python.org/downloads/) 了解更多信息。
+A：可以訪問 [Python 官網](https://www.python.org/downloads/) 瞭解更多資訊。
 
 ***
 
-Q：好像提示我 pip 版本过低。
+Q：好像提示我 pip 版本過低。
 
-A：进入 cmd/shell 之后，执行以下命令：
+A：進入 cmd/shell 之後，執行以下命令：
 
 ```bash
 python -m pip install --upgrade pip
@@ -188,27 +188,27 @@ python -m pip install --upgrade pip
 
 ***
 
-Q：我安装依赖失败了。
+Q：我安裝依賴失敗了。
 
-A：检查一下：网络？权限？查看错误信息？
-
-***
-
-Q：我已经 clone 下来了，为什么部署不了？
-
-A：检查一下是否安装好了依赖？
+A：檢查一下：網路？許可權？查看錯誤資訊？
 
 ***
 
-Q：我 clone 了很久之前的 repo，怎么更新到新版本呢？
+Q：我已經 clone 下來了，為什麼部署不了？
 
-A：请参考 GitHub 官方的帮助页面 [Syncing a fork - GitHub Docs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)。
+A：檢查一下是否安裝好了依賴？
 
 ***
 
-Q：如果是装了之前的依赖怎么更新？
+Q：我 clone 了很久之前的 repo，怎麼更新到新版本呢？
 
-A：请输入以下命令：
+A：請參考 GitHub 官方的説明頁面 [Syncing a fork - GitHub Docs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)。
+
+***
+
+Q：如果是裝了之前的依賴怎麼更新？
+
+A：請輸入以下命令：
 
 ```bash
 pip install -U -r requirements.txt
@@ -216,23 +216,23 @@ pip install -U -r requirements.txt
 
 ***
 
-Q：为什么我的 markdown 格式乱了？
+Q：為什麼我的 markdown 格式亂了？
 
-A：可以查阅 [cyent 的笔记](https://cyent.github.io/markdown-with-mkdocs-material/)，或者 [MkDocs 使用说明](https://github.com/ctf-wiki/ctf-wiki/wiki/Mkdocs-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)。
+A：可以查閱 [cyent 的筆記](https://cyent.github.io/markdown-with-mkdocs-material/)，或者 [MkDocs 使用說明](https://github.com/ctf-wiki/ctf-wiki/wiki/Mkdocs-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)。
 
-我们目前使用 [remark-lint](https://github.com/remarkjs/remark-lint) 来自动化修正格式，可能还有一些 [配置](https://github.com/OI-wiki/OI-wiki/blob/master/.remarkrc) 不够好的地方，欢迎指出。
-
-***
-
-Q：GitHub 是不是不显示我的数学公式？
-
-A：是的，GitHub 的预览不显示数学公式。但是请放心，MkDocs 是支持数学公式的，可以正常使用，只要是 MathJax 支持的句式都可以使用。
+我們目前使用 [remark-lint](https://github.com/remarkjs/remark-lint) 來自動化修正格式，可能還有一些 [配置](https://github.com/NCKUME-wiki/NCKUME-wiki/blob/master/.remarkrc) 不夠好的地方，歡迎指出。
 
 ***
 
-Q：我的数学公式怎么乱码了？
+Q：GitHub 是不是不顯示我的數學公式？
 
-A：如果是行间公式（用的 `$$`），目前已知的问题是需要在 `$$` 两侧留有空行，且 `$$` 要 **单独** 放在一行里（且不要在前加空格）。格式如下：
+A：是的，GitHub 的預覽不顯示數學公式。但是請放心，MkDocs 是支援數學公式的，可以正常使用，只要是 MathJax 支援的句式都可以使用。
+
+***
+
+Q：我的數學公式怎麼亂碼了？
+
+A：如果是行間公式（用的 `$$`），目前已知的問題是需要在 `$$` 兩側留有空行，且 `$$` 要 **單獨** 放在一行裡（且不要在前加空格）。格式如下：
 
 ```text
 // 空行
@@ -244,29 +244,29 @@ $$
 
 ***
 
-Q：我的公式为什么在目录里没有正常显示？好像双倍了。
+Q：我的公式為什麼在目錄裡沒有正常顯示？好像雙倍了。
 
-A：是的，这个是 python-markdown 的一个 bug，可能近期会修复。
+A：是的，這個是 python-markdown 的一個 bug，可能近期會修復。
 
-如果想要避免目录中出现双倍公式，可以参考 [string 分类下 SAM 的目录写法](https://github.com/OI-wiki/OI-wiki/blame/master/docs/string/sam.md#L73)。
-
-```text
-结束位置 <script type="math/tex">endpos</script>
-```
-
-在目录中会变成
+如果想要避免目錄中出現雙倍公式，可以參考 [string 分類下 SAM 的目錄寫法](https://github.com/NCKUME-wiki/NCKUME-wiki/blame/master/docs/string/sam.md#L73)。
 
 ```text
-结束位置 endpos
+結束位置 <script type="math/tex">endpos</script>
 ```
 
-注：现在请尽量避免在目录中引入 MathJax 公式。
+在目錄中會變成
+
+```text
+結束位置 endpos
+```
+
+注：現在請儘量避免在目錄中引入 MathJax 公式。
 
 ***
 
-Q：如何给一个页面单独声明版权信息？
+Q：如何給一個頁面單獨聲明版權資訊？
 
-A：在页面开头加一行即可。[^ref4]
+A：在頁面開頭加一行即可。[^ref4]
 
 比如：
 
@@ -274,30 +274,32 @@ A：在页面开头加一行即可。[^ref4]
 copyright: SATA
 ```
 
-注：默认的是 CC BY-SA 4.0 和 SATA。
+注：默認的是 CC BY-SA 4.0 和 SATA。
 
 ***
 
-Q：为什么作者信息统计处没有我的名字？
+Q：為什麼作者資訊統計處沒有我的名字？
 
-A：如果你发现自己写过一个页面中的部分内容，但是你没有被记录进作者列表，可以把自己的 GitHub ID 加入到文件头的 [author 字段](./htc.md#author-字段)。
+A：如果你發現自己寫過一個頁面中的部分內容，但是你沒有被記錄進作者清單，可以把自己的 GitHub ID 加入到檔頭的 [author 欄位](./htc.md#author-欄位)。
 
 ***
 
-感谢你看到了最后，我们现在亟需的，就是你的帮助。
+感謝你看到了最後，我們現在亟需的，就是你的幫助。
 
-**OI Wiki** 项目组
+**NCKUME wiki** 項目組
 
 2018.8
 
-## 参考资料与注释
+## 參考資料與注釋
 
 [^ref1]: [GitHub520](https://gitee.com/klmahuaw/GitHub520)
 
-[^ref2]: [更改 pip 源至国内镜像 - L 瑜 - CSDN 博客](https://blog.csdn.net/lambert310/article/details/52412059)
+[^ref2]: [更改 pip 源至國內鏡像 - L 瑜 - CSDN 博客](https://blog.csdn.net/lambert310/article/details/52412059)
 
-[^ref3]: [GIT--- 看我一步步入门（Windows Git Bash）](https://blog.csdn.net/FreeApe/article/details/46845555)
+[^ref3]: [GIT--- 看我一步步入門（Windows Git Bash）](https://blog.csdn.net/FreeApe/article/details/46845555)
 
 [^ref4]: [Metadata - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/extensions/metadata/#usage)
 
-[^only-ssh-connect]: GitHub 弃用了基于密码身份验证的 HTTPS 协议，连接必须使用 SSH 或者 Personal Access Token，参见 [我应使用哪个远程 URL？](https://docs.github.com/cn/github/using-git/which-remote-url-should-i-use)，[创建个人访问令牌](https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token) 和 [使用 SSH 连接到 GitHub](https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh)。
+[^only-ssh-connect]: GitHub 棄用了基於密碼身份驗證的 HTTPS 協定，連接必須使用 SSH 或者 Personal Access Token，參見 [我應使用哪個遠端 URL？](https://docs.github.com/cn/github/using-git/which-remote-url-should-i-use)，[創建個人訪問權杖](https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token) 和 [使用 SSH 連接到 GitHub](https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh)。
+
+

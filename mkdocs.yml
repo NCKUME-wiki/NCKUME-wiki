@@ -16,13 +16,14 @@ copyright: Copyright &copy; 2024-2025 NCKUME Wiki Team
 # Contents
 nav:
   - 簡介: 
-    - Getting Started: index.md # trans done
+    - Getting Started: index.md 
     - 關於本項目: intro/about.md
     - 如何參與: intro/htc.md
     - NCKUME Wiki 不是什麼: intro/what-nckume-wiki-is-not.md
     - 格式手冊: intro/format.md
-    - 數學符號表: intro/symbol.md
+    - 工程公式格式: intro/newcommand.md
     - F.A.Q.: intro/faq.md
+    - 數學符號表: intro/symbol.md
     # - 鏡像站列表: intro/mirrors.md # 我們還沒有那麼有錢買得起那麼多網域。
     - 致謝: intro/thanks.md #
   - 總論:
@@ -131,7 +132,6 @@ theme:
     - content.action.edit
     - navigation.tabs
     - navigation.instant
-    - navigation.tabs.sticky
     - navigation.top
   font:
     text: 'Fira Sans'
@@ -166,6 +166,7 @@ extra:
 
 extra_javascript:
   - '_static/js/ToggleEnTerm.js'
+  - '_static/js/ifstar-mathjax.js'
   - '_static/js/math-csr.js?math-csr'
   - 'assets/vendor/mathjax/es5/tex-mml-chtml.js?math-csr'
   # - '{OIWikiFeedbackSystemFrontendJS}' # see: scripts/pre-build/install-feedback-sys-frontend.ts # 不知道什麼東西
