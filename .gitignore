@@ -7,3 +7,7 @@ site/
 .well-known/
 node_modules/
 *.pyc
+
+# Virtual environment & Python cache
+.venv/
+__pycache__/
