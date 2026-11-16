@@ -53,7 +53,4 @@ def on_page_markdown(markdown, page, config, **kwargs):
   for func in replace_fun:
     markdown = func(markdown)
     
-  script = """
-  文字文字
-  """
-  return markdown + script
+  return markdown

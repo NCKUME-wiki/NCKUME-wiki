@@ -80,10 +80,12 @@ nav:
     - 機械製造: manufacture/index.md
   - 機械設計:
     - 機械設計: design/index.md
+    - 為製造而設計: design/dfm.md
   - 電腦輔助X:
     - 電腦輔助工程: computer-aided/index.md # CAE
-    - 設計: computer-aided/CAD.md
-    - 製造: computer-aided/CAM.md
+    - 電腦輔助設計 (CAD): computer-aided/CAD.md
+    - 電腦輔助製造 (CAM): computer-aided/CAM.md
+    - 3D 建模: computer-aided/modeling.md
     - 產品生命週期管理: computer-aided/PLM.md
   - 其他:
     - 其他: misc/index.md
@@ -94,7 +96,7 @@ nav:
   - 術語列表:
     - glossary: glossary/index.md
   - 專題:
-    - Make your X: 404.html
+    - 專題簡介: project/index.md
   - 測試: basic/insertion-sort.md
 
 

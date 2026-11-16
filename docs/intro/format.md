@@ -22,13 +22,13 @@
 
 -   **檔案名請務必都小寫，以 `-` 分割。** 例如：`file-name.md`。
 
--   請務必確保文檔中引用的 **外鏈** 圖片已經全部轉存到了 **本庫內** 對應的 `images` 資料夾中（防止觸發某些網站的防盜鏈），建議處理成 `MD 文檔名稱 + 編號` 的形式（可參考已有文檔中圖片的處理方式）。例如：本篇文檔的檔名稱為 format，則文檔中引用的第一張圖片的名字為 `format1.png`。
+-   請務必確保文檔中引用的 **外鏈** 圖片與自繪圖表已經全部統一存放於 **`docs/assets/<章節名稱>/`** 資料夾中（防止觸發防盜鏈並集中管理靜態資源；例如 `docs/computer-aided/CAD.md` 的配圖存於 `docs/assets/computer-aided/`，在 Markdown 中以相對路徑 `../assets/computer-aided/CAD-1.png` 引用），檔名建議處理成 `MD 文檔名稱-編號` 的形式（例如 `CAD-1.png`）。
 
 -   推薦使用 SVG 格式的圖片[^ref4]，以獲取較好的清晰度和縮放效果。
 
 -   動圖如果無法或者不會製作 SVG 格式的，則推薦使用 APNG 格式[^apng]的檔。Windows 用戶可使用 [ScreenToGif](https://www.screentogif.com) 錄製，Linux 用戶可使用 [Peek](https://github.com/phw/peek) 錄製，注意需要在設置裡調整為錄製 APNG。其他情況則推薦先製作為 MP4 等視頻檔再轉換為 APNG，如果使用 ffmpeg 則可以使用 `ffmpeg -i filename.mp4 -f apng filename.apng -plays 0` 轉換。[^intro-apng]
 
--   同時具有原始檔案和匯出圖像的圖片（例如 JPG 檔與 PSD 檔或者 SVG 圖像與 TikZ TeX 原始程式碼），建議將原始檔案以與圖片相同的檔案名保存於同一目錄下。
+-   若圖片由程式化繪圖引擎（如 Manim Python 腳本）生成，應將繪圖原始碼以相同檔名統一保存於專案根目錄的 `scripts/manim/` 資料夾下（例如 `scripts/manim/CAD-1.py`），`docs/assets/` 內僅存放匯出的圖片檔；其他手動繪圖工具之原始檔（如 PSD 或 TikZ TeX 原始碼）亦建議與圖片檔名保持一致並集中歸檔，切勿在各章節文件目錄下散建 `images/` 資料夾。
 
 -   請確保您的文檔中的引用連結的穩定性。**不推薦** 引用 **自建** 服務中的資源（如自建 OJ 裡的題目）。建議在添加時同時將該外鏈存於互聯網檔案館[^webarchive]，以防無法替代的連結失效。
 
@@ -39,24 +39,21 @@
 **合理性**，指所編寫的 **內容** 必須具有如下的特性：
 
 -   由淺入深，內容的難度應該具有漸進性。
--   邏輯性。
+-   邏輯性與工程嚴謹度。
 
-    -   對於演算法或數學概念類內容的撰寫應該儘量包含以下的內容：
+    -   對於工程理論、力學分析或數學概念類內容的撰寫應該儘量包含以下部分：
 
-        1.  原理：說明該內容對應的原理；
-        2.  例子：給出 1 \~ 2 個典型的例子；
-        3.  題目：在該標題下，**只需要給出題目名字和題目連結**。對於演算法類題目，題目連結 OJ 的優先順序為：原 OJ（國外 OJ 要求國內可流暢訪問）> UOJ > LOJ > 洛穀。
+        1.  **物理背景與定義**：闡明該概念的物理意義、適用範疇與工程幾何圖示；
+        2.  **理論模型與公式推導**：明確列出控制方程式、關鍵假設、邊界條件與詳細推導；
+        3.  **工程範例與計算**：給出 1 ~ 2 個典型的工程實例計算或應用分析案例；
+        4.  **參考文獻**：標明權威教科書、學術文獻或工程規範標準（如 ASME, ISO, CNS 等）。
 
-        示例頁面：[IDA\*](../search/idastar.md)
+    -   對於工程數值分析或工具類內容的撰寫應該儘量包含以下的內容：
 
-    -   對於工具類內容的撰寫應該儘量包含以下的內容：
+        1.  **簡介與背景**：闡明該工具或演算法的工程背景與用途；
+        2.  **配置與實作方式**：詳細給出環境配置、數值模型設定或核心程式碼腳本。
 
-        1.  簡介：闡明該工具的背景與用途。
-        2.  配置方式：詳細給出配置環境與使用的過程，下載與安裝方法建議儘量引用官方文檔。
-
-        示例頁面：[WSL (Windows 10)](../tools/wsl.md)
-
-除現有內容品質較低的情況外，建議儘量從 **補充** 的角度來做貢獻，而非採取直接覆蓋的方式。如果拿不准主意，可以參考 [關於本專案的交流方式](./about.md#交流方式) 一節，與 **NCKUME wiki** 專案組聯繫。
+除現有內容品質較低的情況外，建議儘量從 **補充** 的角度來做貢獻，而非採取直接覆蓋的方式。如果拿不準主意，可以參考 [關於本專案的交流方式](./about.md#交流方式) 一節，與 **NCKUME wiki** 專案組聯繫。
 
 ### 文檔的基本格式要求
 
@@ -278,9 +275,9 @@
     `前置知識：[站內頁面1](url1)、[站內頁面2](url2)和[站內頁面3](url3)`
 
     ???+ success "示例"
-        前置知識：[時間複雜度](../basic/complexity.md)
+        前置知識：[微積分](../eng-math/calculus.md) 或 [靜力學](../mechanics/statics.md)
 
-        本頁面將介紹基礎的計算理論的知識。
+        本頁面將介紹材料力學中樑之受彎變形分析。
 
 -   請注意文檔結構。文檔結構應當十分條理，層次清晰。請不要讓諸如「五級標題」這種事情再次發生了，一篇正常的文章是用不到如此複雜的結構層次的。
 
@@ -445,89 +442,49 @@ LaTeX 作為公式排版的首選，我們應當正確地使用它。因此對�
 
 Wiki 內使用 LaTeX 書寫虛擬碼，整體處於 array 環境中，縮進使用 `$\qquad$`，文字描述使用 `$\text$`，關鍵字使用 `$\textbf$`，賦值使用 `$\gets$`。
 
-參考示例：
+參考示例（牛頓－拉弗森數值求解法）：
 
 $$
 \begin{array}{ll}
-1 &  \textbf{Input. } \text{The edges of the graph } e , \text{ where each element in } e \text{ is } (u, v, w) \\
-  &  \text{ denoting that there is an edge between } u \text{ and } v \text{ weighted } w . \\
-2 &  \textbf{Output. } \text{The edges of the MST of the input graph}.\\
+1 &  \textbf{Input. } \text{Function } f(x), \text{ derivative } f'(x), \text{ initial guess } x_0, \text{ tolerance } \varepsilon, \text{ max iterations } N \\
+2 &  \textbf{Output. } \text{Approximate root } x^* \\
 3 &  \textbf{Method. } \\ 
-4 &  result \gets \varnothing \\
-5 &  \text{sort } e \text{ into nondecreasing order by weight } w \\ 
-6 &  \textbf{for} \text{ each } (u, v, w) \text{ in the sorted } e \\ 
-7 &  \qquad \textbf{if } u \text{ and } v \text{ are not connected in the union-find set } \\
-8 &  \qquad\qquad \text{connect } u \text{ and } v \text{ in the union-find set} \\
-9 &  \qquad\qquad  result \gets result\;\bigcup\ \{(u, v, w)\} \\
-10 &  \textbf{return }  result
+4 &  x \gets x_0 \\
+5 &  \textbf{for } i \gets 1 \textbf{ to } N \\
+6 &  \qquad \Delta x \gets \frac{f(x)}{f'(x)} \\
+7 &  \qquad x \gets x - \Delta x \\
+8 &  \qquad \textbf{if } |\Delta x| < \varepsilon \textbf{ then return } x \\
+9 &  \textbf{return } \text{error ("Failed to converge")}
 \end{array}
 $$
 
 ```latex
 $$
 \begin{array}{ll}
-1 &  \textbf{Input. } \text{The edges of the graph } e , \text{ where each element in } e \text{ is } (u, v, w) \\
-  &  \text{ denoting that there is an edge between } u \text{ and } v \text{ weighted } w . \\
-2 &  \textbf{Output. } \text{The edges of the MST of the input graph}.\\
-3 &  \textbf{Method. } \\
-4 &  result \gets \varnothing \\
-5 &  \text{sort } e \text{ into nondecreasing order by weight } w \\
-6 &  \textbf{for} \text{ each } (u, v, w) \text{ in the sorted } e \\
-7 &  \qquad \textbf{if } u \text{ and } v \text{ are not connected in the union-find set } \\
-8 &  \qquad\qquad \text{connect } u \text{ and } v \text{ in the union-find set} \\
-9 &  \qquad\qquad  result \gets result\;\bigcup\ \{(u, v, w)\} \\
-10 &  \textbf{return }  result
+1 &  \textbf{Input. } \text{Function } f(x), \text{ derivative } f'(x), \text{ initial guess } x_0, \text{ tolerance } \varepsilon, \text{ max iterations } N \\
+2 &  \textbf{Output. } \text{Approximate root } x^* \\
+3 &  \textbf{Method. } \\ 
+4 &  x \gets x_0 \\
+5 &  \textbf{for } i \gets 1 \textbf{ to } N \\
+6 &  \qquad \Delta x \gets \frac{f(x)}{f'(x)} \\
+7 &  \qquad x \gets x - \Delta x \\
+8 &  \qquad \textbf{if } |\Delta x| < \varepsilon \textbf{ then return } x \\
+9 &  \textbf{return } \text{error ("Failed to converge")}
 \end{array}
 $$
 ```
 
-#### 代碼塊的格式要求
+#### 程式碼塊與工程腳本的格式要求
 
-代碼塊目前分為兩種：片段和例題。
+在機械工程與應用數理中，程式碼常用於數值求解、機構運動學模擬、訊號處理或有限元素分析（常用語言包含 Python, MATLAB, Julia, C/C++ 等）。
 
-關於片段代碼：
+為提升程式碼品質與閱讀體驗，請遵守以下原則：
 
--   片段的代碼內容請直接在 Markdown 文檔中修改。
-
-關於例題代碼：
-
--   例題代碼的表示形式為 `--8<-- "path"`，代碼均存儲在 `path` 中。路徑通常為 `docs/主題/code/內容/內容_編號.cpp`。
-
--   修改例題代碼時，請保證你的代碼是正確的。例題代碼均擁有一組測試資料，存儲在 `/docs/主題/examples/內容/內容_編號.in/ans` 中。
-
-如果你需要添加例題：
-
--   請在 `docs/主題/code/內容` 中添加你的例題代碼，並編號。通常，該 `內容` 資料夾中已經有了一個或者多個代碼。例子：如果需要修改 `dag.md` 的代碼，那麼路徑為 `docs/dp/code/dag`，其中 `dp` 為主題，而 `dag` 為內容。
-
--   如果需要在所有例題的最後添加一個例題代碼，請順延目前的編號。比如已經存在了 `code/prefix-sum/prefix-sum_3.cpp`，如果需要在最後一個例題後繼續添加一個例題，請將你的代碼命名為 `prefix-sum_4.cpp` 並添加到 `docs/basic/code/prefix-sum` 中。
-
--   如果需要在文章中間添加一個例題代碼，請插入並改變原先的編號。比如已經存在了 `prefix-sum_2.cpp` 和 `prefix-sum_3.cpp`，如果你需要在第二個例題和第三個例題中間再添加一個例題，請將你的代碼命名為 `prefix-sum_3.cpp` 並將原先的 `prefix-sum_3.cpp` 改名為 `prefix-sum_4.cpp` 同時 **在 Markdown 文檔和測試資料存放的資料夾中同步修改編號**。
-
--   **別忘記，你還要對你的代碼添加一組測試資料，以保證這個代碼是可以成功運行的。** 你需要在 `docs/主題/examples/內容` 資料夾中添加一組測試資料，將輸入資料存儲為 `內容_編號.in`，將標準答案存儲為 `內容_編號.ans`。
-
--   最後，可以將代碼添加到文檔中了。請直接在文檔中用添加代碼塊的格式，並將代碼塊內部直接寫成 `--8<-- "你的代碼路徑"` 的格式就可以了。
-
-**NCKUME wiki** 會對例題代碼進行全平臺測試，為保證您的代碼能夠順利通過測試，請遵守如下規則：
-
--   您的代碼需要同時支援在 C++14、C++17、C++20 標準下編譯和運行。
--   不要使用 `<bits/stdc++.h>`、`<bits/extc++.h>` 等非標準標頭檔。
--   標準答案檔不要有多餘空格。
--   不要使用 [代用記號](https://en.cppreference.com/w/cpp/language/operator_alternative#Alternative_tokens)。
--   使用 [聚合初始化](https://en.cppreference.com/w/cpp/language/aggregate_initialization) 時，`object{args}` 不可寫成 `(object){args}`。
--   使用 [運算子重載](https://en.cppreference.com/w/cpp/language/operators) 時注意格式，如重載比較運算子時，若使用成員函數寫法，則不可省略 `const` 限定詞。
--   不要使用類似 `#define int long long` 的巨集定義。
--   若您需要使用 C 風格的 [有格式輸入/輸出](https://en.cppreference.com/w/cpp/io/c#Formatted_input.2Foutput)，請特別留意格式指示符的寫法：如 `size_t` 對應 `%zu`，`ptrdiff_t` 對應 `%td`。例如輸出某 STL 容器的大小時，代碼應類似 `printf("%zu", container.size());`。
--   由於當前測試環境 libstdc++ 的 `<chrono>` 庫有 [BUG](https://github.com/actions/runner-images/issues/8659)，所以請避免使用 `<chrono>` 庫。
--   由於 `long` 與 `unsigned long` 在某些測試環境下為 32 位，而在另一些測試環境下為 64 位，為確保各平臺代碼行為一致，故不推薦使用這兩種類型。推薦使用 [定寬整數類型](../lang/var.md#定寬整數類型)。
--   不建議使用 `__gcd`、`__int128`、`__builtin_` 系列函數等非標準內容。如果您需要使用，則需確保您的代碼能通過全平臺測試，如 [此代碼](https://github.com/NCKUME-wiki/NCKUME-wiki/blob/4af83d6db6017f4c36db6d4a7583bbc3f6257484/docs/ds/code/tree-decompose/tree-decompose_1.cpp#L24-L47) 提供了 libstdc++ 中 [std::bitset](../lang/csl/bitset.md) 特有成員函數 `_Find_first()` 的全平臺實現。
-
-此外，為了提高代碼的可讀性，建議遵守如下規則：
-
--   代碼應盡可能簡潔易懂，不要過度壓行，不要引入過多無關代碼（如未使用的巨集定義等）。
--   不推薦對函數使用 `inline` 關鍵字，詳見 [編譯優化](../lang/optimizations.md#inline---內聯)。
--   不要用 `0` 代替 `false`/`NULL`/`nullptr` 等，不要用 `1` 代替 `true` 等。
--   在聲明 [類型別名](https://en.cppreference.com/w/cpp/language/type_alias) 時，不推薦使用 `typedef`，推薦使用 `using`。
--   不推薦用巨集定義定義常量，推薦直接使用 `constexpr`/`const` 等關鍵字定義常量。
+-   **標明語言類型**：使用標準 Markdown 程式碼圍欄，並明確標記語言種類（如 ```python、```matlab、```cpp 等）。
+-   **物理單位與變數註解**：在計算腳本中，務必以註解清楚說明輸入變數的物理意義與單位（如 `[m]`, `[N]`, `[Pa]`, `[rad/s]`），以避免混淆。
+-   **註解與演算法說明**：核心數值迴圈或數學演算法（如 Euler 法、Runge-Kutta 法、牛頓疊代法等）建議簡要說明收斂準則與離散公式對應關係。
+-   **可獨立執行性**：若提供完整範例腳本，應確保依賴套件明確（例如 `numpy`, `scipy`, `matplotlib`），並可直接複製至環境中執行出對應結果。
+-   **簡潔與規範**：遵循對應語言的程式碼規範（如 Python 的 PEP 8），避免非必要的複雜包裝與未使用的冗餘變數。
 
 ## 圖解
 

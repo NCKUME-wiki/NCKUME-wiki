@@ -78,7 +78,7 @@
 4.  將這些更改推送（push）到你克隆的分支倉庫；
 5.  提交 Pull Request 至主倉庫。
 
-詳細的操作方式可以參考 [Git](../tools/git.md) 頁面。
+詳細的操作方式可以參考 [Git 官方教學（繁體中文）](https://git-scm.com/book/zh-tw/v2) 或 [GitHub 官方協作手冊](https://docs.github.com/zh)。
 
 #### 向 Pull Request 追加更改
 
@@ -161,19 +161,18 @@ GitHub API 在檔目錄變更後不能跟蹤統計，所以我們在檔頭手動
 
 示例：
 
--   `fix(ds/persistent-seg): 修改代碼注釋使描述更清晰`
--   `fix: tools/judger/index 不在目錄中 (#3709)`
--   `feat(math/poly/fft): better proof`
--   `refactor(ds/stack): 整理頁面內容`
+-   `fix(mechanics/statics): 修正桁架節點法平衡方程式正負號`
+-   `feat(thermo-fluid/heat-transfer): 新增一維穩態熱傳導範例與推導`
+-   `refactor(eng-math/ode): 重新梳理二階線性齊次微分方程章節`
+-   `fix(control/theory): 修正波德圖相位裕度定義 (#12)`
 
 ### 協作流程
 
 1.  在收到一個新的 Pull Request 之後，GitHub 會給 reviewer 發送郵件；
 2.  與此同時，在 [GitHub Actions](https://github.com/NCKUME-wiki/NCKUME-wiki/actions) 和 [Netlify](https://app.netlify.com/sites/NCKUME-wiki) 上會運行兩組測試，它們會把進度同步在 PR 頁面的下方。GitHub Actions 主要用來確認 PR 中內容的修改不會影響到網站構建的進程；Netlify 用來把 PR 中的更新構建出來，方便 reviewer 審核（在測試完成後點擊 Details 可以瞭解更多）；
 3.  reviewer 可能會發現問題，並提出 `review` 或 `suggested changes`（建議更改，顯示為灰色圖示）/`requested changes`（強制更改，顯示為紅色圖示，只會在 reviewer 擁有 repo 寫許可權時出現）。一般來說，reviewer 也會附上建議和需要進行的更改，在這時，您將會需要繼續向 Pull Request 追加其他更改。更改的方法可以參考 `在 GitHub 上編輯` 或者 `使用 Git 在本地進行編輯` 部分的 `向 Pull Request 追加更改` 部分。
-4.  在足夠多 reviewer 投票通過一個 PR 之後，這個 PR 才可以合併到 master 分支中；
-5.  在合併到 master 分支之後，GitHub Actions 會重新構建一遍網站內容，並更新到 gh-pages 分支；
-6.  這時伺服器才會拉取 gh-pages 分支的更新，並重新部署最新版本的內容。
+4.  在足夠多 reviewer 審核通過一個 PR 之後，這個 PR 才會被合併到 main 分支中；
+5.  在合併到 main 分支之後，CI/CD 會自動重新建置網站內容並完成發布。
 
 ## 參考資料與注釋
 
